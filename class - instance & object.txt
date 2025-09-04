@@ -1,0 +1,29 @@
+// This is the Class (the blueprint for a Car)
+public class Car
+{
+    public string Color { get; set; }
+    public string Model { get; set; }
+
+    public Car(string color, string model)
+    {
+        Color = color;
+        Model = model;
+    }
+
+    public void Drive()
+    {
+        Console.WriteLine($"{Color} {Model} is driving.");
+    }
+}
+
+// In your Main method or elsewhere:
+// Creating an object (an instance) of the Car class
+Car myCar = new Car("Red", "Sedan"); 
+
+// myCar is an object, and it is also an instance of the Car class.
+// You can create another instance:
+Car anotherCar = new Car("Blue", "SUV"); 
+// anotherCar is also an object, and another instance of the Car class.
+
+
+//In this example, Car is the class. myCar and anotherCar are both objects, and they are also instances of the Car class. The term "instance" highlights that myCar is one specific realization of the Car class, distinct from anotherCar.
