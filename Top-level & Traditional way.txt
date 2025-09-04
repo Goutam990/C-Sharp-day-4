@@ -1,0 +1,35 @@
+
+/* ================We can not do like this================================
+ * Root level pr :- esa nhi kr skte h
+ * // Top-level statements
+Console.WriteLine("Hello from top-level statements!");
+
+// This will cause a compile-time error!
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Hello from explicit Main method!");
+    }
+}
+===========================================================================
+Program has more than one entry point defined.
+*/
+
+=========================================================================================================
+==========================================================================================================
+
+/*
+=============================Project ke hisab s koi ek entry point choose kro ============
+1. top level statement --> more preferrable for builiding concise apps.
+2. Explicit Program.Main() likhne vala approch --> good for older project. when want more explicit control over the program class structure. 
+*/
+
+
+=======================================================
+/*
+In summary:
+Top-level statements + namespace/class in the same file: Allowed.
+Top-level statements + explicit Program.Main() in the same file: Not allowed (because top-level statements create an implicit Main method).
+*/
+=========================================================
